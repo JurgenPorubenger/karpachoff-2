@@ -106,19 +106,20 @@ body {
     min-height: 510px;
     position: relative;
     overflow: hidden;
-    &:before{
+    &::before {
       position: absolute;
       content: url("../img/Vector 2.svg");
       top: -20px;
       left: 10%;
     }
-    &:after {
+    &::after {
       position: absolute;
       content: url("../img/Vector 2.1.svg");
       top: 50%;
       right: 50%;
     }
     .container {
+      //overflow: hidden;
       .main_header {
         display: flex;
         flex-direction: column;
@@ -161,8 +162,10 @@ body {
           }
         }
         .main_loading_line {
+          box-sizing: padding-box;
           margin-top: 70px;
-          width: 470px;
+          width: 100%;
+          max-width: 470px;
           height: 15px;
           display: flex;
           align-items: center;
@@ -261,8 +264,7 @@ body {
           min-height: 99px;
           p {
             font-size: 1.13rem;
-            font-family: "Proxima Nova";
-            font-weight: bold;
+            font-family: "Proxima Nova-Bold";
             color: $black;
             position: relative;
             &:nth-child(1) {
@@ -278,7 +280,8 @@ body {
             }
           }
           .button_select_child_age {
-            width: 227px;
+            max-width: 227px;
+            width: 100%;
             height: 44px;
             border: 1.3px solid $orange;
             border-radius: 3px;
@@ -455,40 +458,166 @@ body {
   }
   }
 }
-@media screen and (min-width:100px) and (max-width:768px) {
+@media screen and (min-width: 100px) and (max-width: 600px) {
+  html {
+    font-size: 14px;
+  }
+  .container {
+    margin: 0 auto;
+    padding: 0 20px;
+    max-width: 339px;
+    min-width: 250px;
+  }
     body { 
       height: 100vh;
       width: 100%;
       max-width: 375px;
       padding: 0 18px 0 18px;
-      .container {
-        margin: 0 auto;
-        padding: 0 20px;
-        max-width: 339px;
-        min-width: 250px;
-        &::before {
-          position: absolute;
-          content: url(../img/Group23.svg);
-          width: 23px;
-          height: 16px;   
-          right: 0;
-          top: 16px;
+      nav {
+        .container {
+          .nav_row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            align-items: center;
+            min-height: 55px;
+            position: relative;
+            .nav_logo {
+              content: url(../img/Logo1.2.svg);
+            }
+            .nav_menu {
+            &::before {
+              position: absolute;
+              content: url(../img/Group23.svg);
+              width: 23px;
+              height: 16px;
+              right: 0;
+              top: 16px;
+            }
+            p {
+              display: none;
+            }
+          }
         }
-      
-      .nav_row {
+      }
+    }
+  }
+  header {
+    position: relative;
+    //overflow: hidden;
+    &::before{
+      position: absolute;
+      content: url("../img/Vector 2.svg");
+      top: -20px;
+      left: -100px;
+    }
+    &::after {
+      position: absolute;
+      content: url("../img/Vector 2.1.svg");
+      top: 20px;
+      right: 500px;
+    }
+    .container {
+      .main_header {
         display: flex;
+        flex-direction: column;
+        align-items: flex-start;
         flex-wrap: wrap;
-        justify-content: flex-start;
-        align-items: center;
-        min-height: 55px;
+        min-height: 510px;
         position: relative;
-        .nav_logo {
-          content: url(../img/Logo1.2.svg);
+        &::after {
+          display: none;
         }
-       
-        .nav_menu {
-          p {
-            display: none;
+        .main_loading_line {
+          max-width: 340px;
+          width: 100%;
+        }
+        .main_loading_text {
+          display: flex;
+          max-width: 340px;
+          width: 100%;
+          //height: 42px;
+          div {
+            width: 60%;
+            &:nth-child(2){
+              width: 40%;
+            }
+            p {
+              display: flex;
+              flex-direction: row;
+              font-size: 2.38rem;
+              font-family: "Proxima Nova";
+              font-weight: bold;
+              color: white;
+              span {
+                font-size: 0.88rem;
+                font-family: "Proxima Nova";
+                font-weight: normal;
+                color: white;
+                margin: 5px 10px 5px 10px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  main {
+    section {
+      &:nth-of-type(1) {
+        display: none;
+      }
+      &:nth-of-type(2) {
+        .container {
+          .course_topics {
+            min-height: 143px;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: space-around;
+            p {
+              font-size: 1.3rem;
+            }
+            .button_select_child_age {
+              max-width: 344px;
+              width: 100%;
+              a {
+                font-size: 1rem;
+              }
+            }
+          }
+        }
+      }
+      &:nth-of-type(3) {
+        .container {
+          .main_numerated_topics_container {
+            grid-template-rows: repeat(6, minmax(340px, auto));
+            .topics_differently {
+              display: flex;
+              flex-direction: column;
+              .topics_number {
+                font-size: 2.85rem;
+              }
+              .topics_text {
+                max-width: 100%;
+                flex-direction: row;
+                h2 {
+                  line-height: 1em;
+                  font-size: 1.3rem;
+                }
+              }
+              .loading_block {
+                display: inline-block;
+                //transform: rotate(90deg);
+                .loading_line {
+                  transform: rotate(90deg) translate(-330px, -200px);
+                  position: relative;
+                  &::after{
+                    position: absolute;
+                    content: "";
+                  }
+                }
+              }
+            }
           }
         }
       }
