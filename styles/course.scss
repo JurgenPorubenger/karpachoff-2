@@ -121,38 +121,48 @@ body {
     .container {
       //overflow: hidden;
       .main_header {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        flex-wrap: wrap;
-        min-height: 510px;
-        position: relative;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, 90px);
+        grid-template-rows: repeat(2, minmax(230px, 1fr));
+        grid-row-gap: 10%;
         &::after {
-          position: absolute;
+          //position: absolute;
           content: url("../img/karpachoff.png");
-          bottom: -5px;
-          left: 60%;
+          //bottom: -5px;
+          //left: 60%;
+          grid-column: -6/-1;
+          grid-row: 1/3;
+          justify-self: center;
+          align-self: end;
+          z-index: 1;
         }
-        h1 {
-          padding-top: 100px;
+        .academy {
+          grid-column: 1/-5;
+          grid-row: 1/2;
           font-size: 2.38rem;
           font-family: "Intro";
           color: white;
           font-weight: normal;
+          align-self: end;
+          z-index: 2;
           span {
             color: $orange;
             font-size: 1.5rem;
           }
         }
         .button_course {
-          margin-top: 30px;
-          width: 209px;
+          grid-column: 1/4;
+          grid-row: 2/3;
+          //margin-top: 30px;
+          max-width: 209px;
+          //width: 100%;
           height: 44px;
           border: 1px solid white;
           border-radius: 3px;
           display: flex;
           justify-content: center;
           align-items: center;
+          z-index: 2;
           a {
             text-decoration: none;
             font-size: 0.88rem;
@@ -161,51 +171,151 @@ body {
             color: white;
           }
         }
-        .main_loading_line {
-          box-sizing: padding-box;
-          margin-top: 70px;
-          width: 100%;
-          max-width: 470px;
-          height: 15px;
-          display: flex;
-          align-items: center;
-          border-radius: 3px;
-          background-color: #ffffff;
-          padding-left: 3px;
-          div {
-            width: 60%;
-            height: 60%;
-            background-color: $blue_bgc;
+        .loading_block {
+          display: grid;
+          grid-column: 1/7;
+          grid-row: 2/3;
+          grid: subgrid;
+          grid-template-rows: repeat(2, 1fr);
+          z-index: 2;
+          .main_loading_line {
+            grid-column: 1/7;
+            grid-row: 2/3;
+            align-self: start;
+            box-sizing: border-box;
+            //width: 100%;
+            max-width: 470px;
+            height: 15px;
+            display: flex;
+            align-items: center;
             border-radius: 3px;
-          }
-        }
-        .main_loading_text {
-          display: flex;
-          width: 470px;
-          height: 42px;
-          div {
-            width: 60%;
-            &:nth-child(2){
-              width: 40%;
+            background-color: #ffffff;
+            padding-left: 3px;
+            div {
+              width: 60%;
+              height: 60%;
+              background-color: $blue_bgc;
+              border-radius: 3px;
             }
-            p {
-              display: flex;
-              flex-direction: row;
-              font-size: 2.38rem;
-              font-family: "Proxima Nova";
-              font-weight: bold;
-              color: white;
-              span {
-                font-size: 0.88rem;
+          }
+          .main_loading_text {
+            grid-column: 1/7;
+            grid-row: 2/3;
+            align-self:  center;
+            display: flex;
+            width: 470px;
+            max-height: 42px;
+            padding-bottom: 30px;
+            div {
+              width: 60%;
+              &:nth-child(2){
+                width: 40%;
+              }
+              p {
+                display: flex;
+                flex-direction: row;
+                font-size: 2.38rem;
                 font-family: "Proxima Nova";
-                font-weight: normal;
+                font-weight: bold;
                 color: white;
-                margin: 5px 10px 5px 10px;
+                span {
+                  font-size: 0.88rem;
+                  font-family: "Proxima Nova";
+                  font-weight: normal;
+                  color: white;
+                  margin: 5px 10px 5px 10px;
+                }
               }
             }
           }
         }
       }
+      //.main_header {
+      //  display: flex;
+      //  flex-direction: column;
+      //  align-items: flex-start;
+      //  flex-wrap: wrap;
+      //  min-height: 510px;
+      //  position: relative;
+      //  &::after {
+      //    position: absolute;
+      //    content: url("../img/karpachoff.png");
+      //    bottom: -5px;
+      //    left: 60%;
+      //  }
+      //  h1 {
+      //    padding-top: 100px;
+      //    font-size: 2.38rem;
+      //    font-family: "Intro";
+      //    color: white;
+      //    font-weight: normal;
+      //    span {
+      //      color: $orange;
+      //      font-size: 1.5rem;
+      //    }
+      //  }
+      //  .button_course {
+      //    margin-top: 30px;
+      //    width: 209px;
+      //    height: 44px;
+      //    border: 1px solid white;
+      //    border-radius: 3px;
+      //    display: flex;
+      //    justify-content: center;
+      //    align-items: center;
+      //    a {
+      //      text-decoration: none;
+      //      font-size: 0.88rem;
+      //      font-family: "Proxima Nova";
+      //      font-weight: bold;
+      //      color: white;
+      //    }
+      //  }
+      //  .main_loading_line {
+      //    box-sizing: padding-box;
+      //    margin-top: 70px;
+      //    width: 100%;
+      //    max-width: 470px;
+      //    height: 15px;
+      //    display: flex;
+      //    align-items: center;
+      //    border-radius: 3px;
+      //    background-color: #ffffff;
+      //    padding-left: 3px;
+      //    div {
+      //      width: 60%;
+      //      height: 60%;
+      //      background-color: $blue_bgc;
+      //      border-radius: 3px;
+      //    }
+      //  }
+      //  .main_loading_text {
+      //    display: flex;
+      //    width: 470px;
+      //    height: 42px;
+      //    div {
+      //      width: 60%;
+      //      &:nth-child(2){
+      //        width: 40%;
+      //      }
+      //      p {
+      //        display: flex;
+      //        flex-direction: row;
+      //        font-size: 2.38rem;
+      //        font-family: "Proxima Nova";
+      //        font-weight: bold;
+      //        color: white;
+      //        span {
+      //          font-size: 0.88rem;
+      //          font-family: "Proxima Nova";
+      //          font-weight: normal;
+      //          color: white;
+      //          margin: 5px 10px 5px 10px;
+      //        }
+      //      }
+      //    }
+      //  }
+      //}
     }
   }
   main {
@@ -315,11 +425,12 @@ body {
           grid-template-rows: repeat(6, minmax(203px, auto));
           grid-row-gap: 20px;
           .topics_differently {
-            display:flex;
-            justify-content: space-around;
-            box-shadow: 0 10px 10px #FAFAFA;
-            border-radius: 3px;
-            border: 1px #FAFAFA solid;
+
+            //display:flex;
+            //justify-content: space-around;
+            //box-shadow: 0 10px 10px #FAFAFA;
+            //border-radius: 3px;
+            //border: 1px #FAFAFA solid;
             .topics_number {
               display: flex;
               align-self: flex-start;
@@ -594,6 +705,9 @@ body {
             .topics_differently {
               display: flex;
               flex-direction: column;
+              padding: 20px;
+              box-sizing: border-box;
+              height: 328px;
               .topics_number {
                 font-size: 2.85rem;
               }
