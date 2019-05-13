@@ -251,15 +251,15 @@ body {
         color: #FF8A00; }
   body main section .container .main_numerated_topics_container {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(8, minmax(135px, au));
     grid-template-rows: repeat(6, minmax(203px, auto));
+    grid-auto-flow: column;
     grid-row-gap: 20px; }
     body main section .container .main_numerated_topics_container .topics_differently {
-      display: flex;
-      justify-content: space-around;
       box-shadow: 0 10px 10px #FAFAFA;
       border-radius: 3px;
-      border: 1px #FAFAFA solid; }
+      display: grid;
+      grid-template-rows: repeat(6, minmax(33px, auto)); }
       body main section .container .main_numerated_topics_container .topics_differently .topics_number {
         display: flex;
         align-self: flex-start;

@@ -24,8 +24,8 @@
           <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/index.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="66">
-                  <caret line="50" column="14" lean-forward="true" selection-start-line="50" selection-start-column="14" selection-end-line="50" selection-end-column="14" />
+                <state relative-caret-position="132">
+                  <caret line="50" column="14" selection-start-line="50" selection-start-column="14" selection-end-line="50" selection-end-column="14" />
                   <folding>
                     <element signature="n#head#0;n#html#0;n#!!top" />
                     <element signature="n#nav#0;n#body#0;n#html#0;n#!!top" />
@@ -40,7 +40,7 @@
           <file leaf-file-name="index2.html" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/index2.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="428">
+                <state relative-caret-position="572">
                   <caret line="26" column="22" selection-start-line="26" selection-start-column="22" selection-end-line="26" selection-end-column="22" />
                 </state>
               </provider>
@@ -53,16 +53,11 @@
           <file leaf-file-name="course.scss" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/styles/course.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="859">
-                  <caret line="431" column="31" lean-forward="true" selection-start-line="431" selection-start-column="31" selection-end-line="431" selection-end-column="31" />
+                <state relative-caret-position="198">
+                  <caret line="424" column="57" lean-forward="true" selection-start-line="424" selection-start-column="57" selection-end-line="424" selection-end-column="57" />
                   <folding>
                     <element signature="e#685#766#0" />
                     <element signature="e#852#2252#0" />
-                    <element signature="e#4876#5999#0" />
-                    <element signature="e#6012#7493#0" />
-                    <element signature="e#10598#11821#0" />
-                    <element signature="e#11937#14466#0" />
-                    <element signature="e#12140#12802#0" />
                   </folding>
                 </state>
               </provider>
@@ -178,15 +173,16 @@
       <workItem from="1557247494496" duration="3312000" />
       <workItem from="1557260012901" duration="181000" />
       <workItem from="1557260459303" duration="1389000" />
-      <workItem from="1557261873798" duration="17608000" />
+      <workItem from="1557261873798" duration="19376000" />
+      <workItem from="1557669888750" duration="1774000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="86174000" />
+    <option name="totallyTimeSpent" value="89716000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.10800843" />
@@ -201,29 +197,29 @@
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39823008" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" />
     </layout>
     <layout-to-restore>
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.10800843" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32853982" />
-      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39823008" />
       <window_info anchor="bottom" id="Terminal" order="10" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" weight="0.32861805" />
-      <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Message" order="0" />
       <window_info id="Favorites" order="2" side_tool="true" />
     </layout-to-restore>
   </component>
@@ -234,6 +230,38 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="50" column="14" lean-forward="true" selection-start-line="50" selection-start-column="14" selection-end-line="50" selection-end-column="14" />
+          <folding>
+            <element signature="n#head#0;n#html#0;n#!!top" />
+            <element signature="n#nav#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#header#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#section#1;n#main#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#footer#0;n#body#0;n#html#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="572">
+          <caret line="26" column="22" selection-start-line="26" selection-start-column="22" selection-end-line="26" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/styles/course.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="9482">
+          <caret line="431" column="31" lean-forward="true" selection-start-line="431" selection-start-column="31" selection-end-line="431" selection-end-column="31" />
+          <folding>
+            <element signature="e#685#766#0" />
+            <element signature="e#852#2252#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="286">
@@ -255,11 +283,6 @@
           <folding>
             <element signature="e#685#766#0" />
             <element signature="e#852#2252#0" />
-            <element signature="e#4876#5999#0" />
-            <element signature="e#6012#7493#0" />
-            <element signature="e#10598#11821#0" />
-            <element signature="e#11937#14466#0" />
-            <element signature="e#12140#12802#0" />
           </folding>
         </state>
       </provider>
@@ -285,11 +308,6 @@
           <folding>
             <element signature="e#685#766#0" />
             <element signature="e#852#2252#0" />
-            <element signature="e#4876#5999#0" />
-            <element signature="e#6012#7493#0" />
-            <element signature="e#10598#11821#0" />
-            <element signature="e#11937#14466#0" />
-            <element signature="e#12140#12802#0" />
           </folding>
         </state>
       </provider>
@@ -315,11 +333,6 @@
           <folding>
             <element signature="e#685#766#0" />
             <element signature="e#852#2252#0" />
-            <element signature="e#4876#5999#0" />
-            <element signature="e#6012#7493#0" />
-            <element signature="e#10598#11821#0" />
-            <element signature="e#11937#14466#0" />
-            <element signature="e#12140#12802#0" />
           </folding>
         </state>
       </provider>
@@ -359,11 +372,6 @@
           <folding>
             <element signature="e#685#766#0" />
             <element signature="e#852#2252#0" />
-            <element signature="e#4876#5999#0" />
-            <element signature="e#6012#7493#0" />
-            <element signature="e#10598#11821#0" />
-            <element signature="e#11937#14466#0" />
-            <element signature="e#12140#12802#0" />
           </folding>
         </state>
       </provider>
@@ -466,37 +474,37 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index2.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="428">
+        <state relative-caret-position="572">
           <caret line="26" column="22" selection-start-line="26" selection-start-column="22" selection-end-line="26" selection-end-column="22" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/styles/course.scss">
+    <entry file="file://$PROJECT_DIR$/styles/course.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="859">
-          <caret line="431" column="31" lean-forward="true" selection-start-line="431" selection-start-column="31" selection-end-line="431" selection-end-column="31" />
-          <folding>
-            <element signature="e#685#766#0" />
-            <element signature="e#852#2252#0" />
-            <element signature="e#4876#5999#0" />
-            <element signature="e#6012#7493#0" />
-            <element signature="e#10598#11821#0" />
-            <element signature="e#11937#14466#0" />
-            <element signature="e#12140#12802#0" />
-          </folding>
-        </state>
+        <state relative-caret-position="-1056" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="50" column="14" lean-forward="true" selection-start-line="50" selection-start-column="14" selection-end-line="50" selection-end-column="14" />
+        <state relative-caret-position="132">
+          <caret line="50" column="14" selection-start-line="50" selection-start-column="14" selection-end-line="50" selection-end-column="14" />
           <folding>
             <element signature="n#head#0;n#html#0;n#!!top" />
             <element signature="n#nav#0;n#body#0;n#html#0;n#!!top" />
             <element signature="n#header#0;n#body#0;n#html#0;n#!!top" />
             <element signature="n#section#1;n#main#0;n#body#0;n#html#0;n#!!top" />
             <element signature="n#footer#0;n#body#0;n#html#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/styles/course.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="424" column="57" lean-forward="true" selection-start-line="424" selection-start-column="57" selection-end-line="424" selection-end-column="57" />
+          <folding>
+            <element signature="e#685#766#0" />
+            <element signature="e#852#2252#0" />
           </folding>
         </state>
       </provider>
