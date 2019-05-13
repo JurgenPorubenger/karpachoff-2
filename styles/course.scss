@@ -422,9 +422,9 @@ body {
       .container {
         .main_numerated_topics_container {
           display: grid;
-          grid-template-columns: repeat(8 ,minmax(135px, auto));
+          // grid-template-columns: repeat(12 ,minmax(90, 1fr));
           grid-template-rows: repeat(6, minmax(203px, auto));
-          grid-auto-flow: column;
+          // grid-auto-flow: row;
           grid-row-gap: 20px;
           .topics_differently {
             //display:flex;
@@ -433,8 +433,18 @@ body {
             border-radius: 3px;
             //border: 1px #FAFAFA solid;
             display: grid;
-            grid-template-rows: repeat(6, minmax(33px, auto));;
+            // grid:subgrid;
+            // grid-template-rows: repeat(6, minmax(33px, auto));
+            grid-template-areas: "num num num text text text text text text load load load"
+                                 "num num num text text text text text text load load load"
+                                 "num num num text text text text text text load load load"
+                                 "num num num text text text text text text load load load"
+                                 "num num num text text text text text text load load load"
+                                 "num num num text text text text text text load load load";
             .topics_number {
+              // grid-column: 1/3;
+              // grid-row: 1/3;
+              grid-area: num;
               display: flex;
               align-self: flex-start;
               font-size: 4rem;
@@ -444,6 +454,9 @@ body {
               margin-top: 30px;
             }
             .topics_text {
+              grid-area: text;
+              // grid-column: 3/-3;
+              // grid-row: 2/8;
               display: flex;
               flex-wrap: wrap;
               flex-direction: column;
@@ -489,6 +502,7 @@ body {
               }
             }
             .loading_block {
+              grid-area: load;
               display: flex;
               justify-content: center;
               flex-direction: column;
